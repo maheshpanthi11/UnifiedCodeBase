@@ -18,6 +18,11 @@ namespace UnifiedCodeBase
                     var isWord = trie.Search("random");
                     var isPrefix = trie.IsPrefix("ran");
                     break;
+                case "firstmissingnumber":
+                    var obj = new FirstMissingPostive();
+                    var result = obj.FindFirstMissingPostive();
+                    var result1 = obj.FirstMissingNumberBF();
+                    break;
                 default:
                     break;
             }
