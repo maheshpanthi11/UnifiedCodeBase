@@ -23,6 +23,14 @@ namespace UnifiedCodeBase
                     var result = obj.FindFirstMissingPostive();
                     var result1 = obj.FirstMissingNumberBF();
                     break;
+                case "alphatriangle":
+                    var tri = new AlphabetTriangle();
+                    tri.ShowTriangle();
+                    break;
+                case "startriangle":
+                    var star = new TriangleStar();
+                    star.MakeStar();
+                    break;
                 default:
                     break;
             }
