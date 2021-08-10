@@ -11,11 +11,11 @@ namespace UnifiedCodeBase
             int[] firstArray = { 1, 2, 3, 5, 7, 8 };
             int[] secondArray = { 1, 5, 7, 8, 12, 13 };
 
-            int? firstVal = firstArray[0];
-            int? secondVal = secondArray[0];
-
             var farIndex = 0;
             var sarIndex = 0;
+
+            int? firstVal = firstArray[farIndex];
+            int? secondVal = secondArray[sarIndex];
 
             List<int> finalArray = new List<int>();
 

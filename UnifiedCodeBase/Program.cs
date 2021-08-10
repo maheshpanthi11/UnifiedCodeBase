@@ -35,6 +35,13 @@ namespace UnifiedCodeBase
                 case "mergearray":
                     MergeArray.Execute();
                     break;
+                case "twosum":
+                    TwoSum.Execute();
+                    break;
+                case "maxsumarray":
+                    var maxSum = new MaxSumArray();
+                    maxSum.MaxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 });
+                    break;
                 default:
                     Execute();
                     break;
@@ -44,6 +51,7 @@ namespace UnifiedCodeBase
         public static void Execute()
         {
             Console.WriteLine("Invalid Choice");
+
         }
     }
 }
