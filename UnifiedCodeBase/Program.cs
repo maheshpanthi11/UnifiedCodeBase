@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UnifiedCodeBase
 {
@@ -31,9 +32,18 @@ namespace UnifiedCodeBase
                     var star = new TriangleStar();
                     star.MakeStar();
                     break;
+                case "mergearray":
+                    MergeArray.Execute();
+                    break;
                 default:
+                    Execute();
                     break;
             }
+        }
+
+        public static void Execute()
+        {
+            Console.WriteLine("Invalid Choice");
         }
     }
 }
