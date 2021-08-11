@@ -46,6 +46,10 @@ namespace UnifiedCodeBase
                     var moveZeros = new MoveZeros();
                     moveZeros.MoveZeroes(new int[] { 0, 1, 0, 3, 12 });
                     break;
+                case "containsduplicates":
+                    var contains = new ContainsDuplicate();
+                    contains.ContainsDuplicateItems(new int[] { 1, 2, 3, 1 });
+                    break;
                 default:
                     Execute();
                     break;
