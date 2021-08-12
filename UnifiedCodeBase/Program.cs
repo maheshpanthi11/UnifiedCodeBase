@@ -50,6 +50,14 @@ namespace UnifiedCodeBase
                     var contains = new ContainsDuplicate();
                     contains.ContainsDuplicateItems(new int[] { 1, 2, 3, 1 });
                     break;
+                case "linkedlist":
+                    var linkList = new MyLinkedList<int>(9);
+                    linkList.Append(5);
+                    linkList.Prepend(10);
+                    linkList.Append(13);
+                    linkList.Append(14);
+                    linkList.Insert(11, 3);
+                    break;
                 default:
                     Execute();
                     break;
