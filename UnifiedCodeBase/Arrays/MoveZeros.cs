@@ -20,19 +20,17 @@ namespace UnifiedCodeBase
     {
         public void MoveZeroes(int[] nums)
         {
-            int sum = 0;
             int counter = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                sum = sum + nums[i];
-                if (sum > 0)
+                var data = nums[i];
+                if (data != 0)
                 {
-                    nums[counter] = sum;
                     nums[i] = 0;
-                    sum = 0;
+                    nums[counter] = data; 
                     counter++;
                 }
-            }
+            }    
         }
     }
 }
