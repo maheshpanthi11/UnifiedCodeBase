@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnifiedCodeBase.Arrays;
 
 namespace UnifiedCodeBase
 {
@@ -27,6 +28,7 @@ namespace UnifiedCodeBase
                 case "alphatriangle":
                     var tri = new AlphabetTriangle();
                     tri.ShowTriangle();
+
                     break;
                 case "startriangle":
                     var star = new TriangleStar();
@@ -57,6 +59,10 @@ namespace UnifiedCodeBase
                     linkList.Append(13);
                     linkList.Append(14);
                     linkList.Insert(11, 3);
+                    break;
+                case "searchindex":
+                    var search = new SearchIndex();
+                    search.SearchInsert(new int[] { 1, 3, 5, 6 }, 0);
                     break;
                 default:
                     Execute();
